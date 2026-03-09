@@ -12,13 +12,14 @@ const calcularMedia = () => {
     let resultadoMedia = (recebeNota1 + recebeNota2 + recebeNota3) / 3
 
     if(resultadoMedia >= 7){
-        enviaResultado = 'O aluno ' + recebeNome + ' foi aprovado!'
+        enviaResultadotextContent = 'O aluno ' + recebeNome + ' foi aprovado!'
+        devolveResultado.classList.add('aprovado')
     }else if(resultadoMedia < 5){
-        enviaResultado = 'O aluno ' + recebeNome + ' foi reprovado!'
+        enviaResultadotextContent = 'O aluno ' + recebeNome + ' foi reprovado!'
     }else{
-        enviaResultado = 'O aluno ' + recebeNome + ' está em recuperação!'
+        enviaResultado.textContent = 'O aluno ' + recebeNome + ' está em recuperação!'
     }
 }
 
 
-btnCalcularMedia.addEventListener('click', calcularDesconto)
+btnCalcularMedia.addEventListener('click', calcularMedia)

@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
 body {
   background-color: #030712;
   min-height: 100vh;
@@ -122,4 +135,19 @@ footer p {
   font-size: 0.75rem;
   text-align: center;
   padding: 1rem;
+}
+
+.aprovado{
+  background-color: #14532d;
+  color:white;
+}
+
+.recuperacao{
+  background-color: #713f12;
+  color:white;
+}
+
+.reprovado{
+  background-color: #7f1d1d;
+  color:white;
 }
