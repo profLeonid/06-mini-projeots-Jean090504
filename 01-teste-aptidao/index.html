@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Teste de Aptidão</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="./main.js" defer></script>
 </head>
 
 <body>
@@ -20,12 +21,15 @@
         Digite o tempo, em segundos, da corrida de 100m.
       </p>
 
+      <label>Nome</label>
+      <input id="inputNome" type="text" placeholder="Ex: João da Silva" />
+
       <label>Tempo (s)</label>
-      <input type="number" placeholder="Ex: 13.8" />
+      <input id="inputTempo" type="number" placeholder="Ex: 13.8" />
 
-      <button>Avaliar</button>
+      <button id="buttonAvaliar">Avaliar</button>
 
-      <div class="resultado">
+      <div id="resultadoTempo" class="resultado">
         O resultado aparecerá aqui
       </div>
     </div>
