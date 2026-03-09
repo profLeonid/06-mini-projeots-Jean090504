@@ -21,18 +21,21 @@
       </h1>
       <p class="descricao">Digite as três notas para calcular a situação do aluno.</p>
 
+      <label>Nome</label>
+      <input id="nome" type="text" placeholder="Ex: Jean Costa" />
+
       <label>Nota 1</label>
-      <input type="number" placeholder="0 a 10" />
+      <input id="n1" type="number" placeholder="0 a 10" />
 
       <label>Nota 2</label>
-      <input type="number" placeholder="0 a 10" />
+      <input id="n2" type="number" placeholder="0 a 10" />
 
       <label>Nota 3</label>
-      <input type="number" placeholder="0 a 10" />
+      <input id="n3" type="number" placeholder="0 a 10" />
 
-      <button onclick="calcularMedia()">Calcular Média</button>
+      <button id="buttonCalcularMedia">Calcular Média</button>
 
-      <div class="resultado">
+      <div id="resultadoMedia" class="resultado">
         O resultado aparecerá aqui
       </div>
 
