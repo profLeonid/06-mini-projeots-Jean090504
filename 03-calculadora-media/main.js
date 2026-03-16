@@ -3,6 +3,8 @@
 const btnCalcularMedia = document.getElementById('buttonCalcularMedia')
 
 const calcularMedia = () => {
+
+
     const recebeNome = document.getElementById('nome').value
     const recebeNota1 = Number(document.getElementById('n1').value)
     const recebeNota2 = Number(document.getElementById('n2').value)
@@ -11,13 +13,20 @@ const calcularMedia = () => {
 
     let resultadoMedia = (recebeNota1 + recebeNota2 + recebeNota3) / 3
 
+    
+
     if(resultadoMedia >= 7){
-        enviaResultadotextContent = 'O aluno ' + recebeNome + ' foi aprovado!'
-        devolveResultado.classList.add('aprovado')
+        enviaResultado.textContent = 'O aluno ' + recebeNome + ' foi aprovado!'
+        enviaResultado.classList.remove('recuperacao', 'reprovado')
+        enviaResultado.classList.add('aprovado')
     }else if(resultadoMedia < 5){
-        enviaResultadotextContent = 'O aluno ' + recebeNome + ' foi reprovado!'
+        enviaResultado.textContent = 'O aluno ' + recebeNome + ' foi reprovado!',
+        enviaResultado.classList.remove('recuperacao', 'aprovado')
+        enviaResultado.classList.add('reprovado')
     }else{
         enviaResultado.textContent = 'O aluno ' + recebeNome + ' está em recuperação!'
+        enviaResultado.classList.remove('reprovado', 'aprovado')
+        enviaResultado.classList.add('recuperacao')
     }
 }
 
