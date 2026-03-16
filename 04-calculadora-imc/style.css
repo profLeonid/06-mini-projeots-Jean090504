@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 body {
   background-color: #030712;
   min-height: 100vh;
@@ -123,3 +135,34 @@ footer p {
   text-align: center;
   padding: 1rem;
 }
+
+.abaixo-peso {
+  background-color: #1e3a5f;
+  color: white;
+}
+
+.peso-normal {
+  background-color: #14532d;
+  color: white;
+}
+
+.sobrepeso {
+  background-color: #713f12;
+  color: white;
+}
+
+.obesidade-grau-1 {
+  background-color: #7f1d1d;
+  color: white;
+}
+
+.obesidade-grau-2 {
+  background-color: #6b0f0f;
+  color: white;
+}
+
+.obesidade-grau-3 {
+  background-color: #450a0a;
+  color: white;
+}
+
